@@ -4,7 +4,8 @@
 
 	let { children } = $props();
 
-	let toast = $state()
+	let toast = $state();
+
 	$effect(() => {
 		if (updated.current) {
 			toast= 'A new update is available.'
